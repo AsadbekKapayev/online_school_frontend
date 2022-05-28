@@ -1,0 +1,28 @@
+<div>
+  <h3> Create Student </h3>
+  <br/>
+  <form (ngSubmit) = "createStudent()">
+    <label for="firstName">First Name: </label>
+    <input type="text" id = "firstName"
+           [(ngModel)] = "student.name" name = "firstName"><br/>
+
+    <label for="lastName">Last Name: </label>
+    <input type="text" id = "lastName"
+           [(ngModel)] = "student.surname" name = "lastName"><br/>
+
+    <button type ="submit">Submit</button>
+  </form>
+</div>
+
+<ul>
+  <li *ngFor="let student of students">
+    <strong>{{student.id}}</strong>
+    {{student.name}}
+    {{student.surname}}
+    <button class="rm" (click)="removeStudent(student.id)">&times;</button>
+  </li>
+</ul>
+
+
+<hr/>
+<a routerLink="/login">Logout</a>
