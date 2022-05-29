@@ -1,27 +1,39 @@
-# OnlineSchoolNg
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.7.
 
-## Development server
+https://user-images.githubusercontent.com/101979162/170857418-81763953-073d-4fdc-aa76-120cf64eebf7.mp4
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+1. Download the project
 
-## Code scaffolding
+1.1 Copy the path
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+<img width="285" alt="Screenshot 2022-05-29 133534" src="https://user-images.githubusercontent.com/101979162/170857468-bd4f0e9a-1b67-40b4-bedf-8b2b493a244b.png">
 
-## Build
+1.2 Open the get from version control window and paste the path
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+<img width="597" alt="Screenshot 2022-05-29 133859" src="https://user-images.githubusercontent.com/101979162/170857578-2980b6d4-402b-487b-82b4-3057d6ebd5e3.png">
 
-## Running unit tests
+1.3 Wait until the project will finish configuration process
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+1.4 Open the Terminal of project
 
-## Running end-to-end tests
+<img width="277" alt="Screenshot 2022-05-29 134110" src="https://user-images.githubusercontent.com/101979162/170857627-cfb9c251-cf96-43de-9b91-72ba6483ce38.png">
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+1.5 In the terminal enter "npm install"
 
-## Further help
+<img width="628" alt="image" src="https://user-images.githubusercontent.com/101979162/170857652-4fa93cd8-81f8-46d8-a358-9104ddc53e29.png">
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+1.6 Wait until the project will finish configuration process
+
+2. Launching the project
+
+2.1 Open terminal and enter "ng serve"
+
+<img width="629" alt="image" src="https://user-images.githubusercontent.com/101979162/170857722-1c17771b-293d-40b3-8269-95434507c50c.png">
+
+2.2 Now you can press the link "http://localhost:4200/"
+
+<img width="815" alt="image" src="https://user-images.githubusercontent.com/101979162/170857795-f7389687-7cc1-4c28-86bb-36cc0279ae8a.png">
+
+2.3 Now you can use website
+
+!!WARNING You should launch spring boot app firstly, you can find the link to download the project in the pdf file
