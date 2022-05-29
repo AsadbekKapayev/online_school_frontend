@@ -1,10 +1,10 @@
 <div>
   <form (ngSubmit)="login()">
     <label for="email">Email: </label>
-    <input [(ngModel)]="email" type="email" id="email" name="email"><br/>
+    <input [(ngModel)]="userDto.email" type="email" id="email" name="email"><br/>
 
     <label for="password">Password: </label>
-    <input [(ngModel)]="password" type="password" id="password" name="password"><br/>
+    <input [(ngModel)]="userDto.password" type="password" id="password" name="password"><br/>
 
     <button type ="submit">Login</button>
   </form>

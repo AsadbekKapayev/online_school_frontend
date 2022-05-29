@@ -2,6 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import {UsersService} from "../shared/users.service";
 import {Router} from "@angular/router";
 import {HttpHeaders} from "@angular/common/http";
+import {Userdto} from "../model/userdto";
+import {Token} from "../model/token";
+import {Globalvar} from "../model/globalvar";
 
 @Component({
   selector: 'app-log-in',
@@ -10,8 +13,8 @@ import {HttpHeaders} from "@angular/common/http";
 })
 export class LogInComponent implements OnInit {
 
-  email: string = ''
-  password: string = ''
+  userDto: Userdto = new Userdto()
+  token: Token
 
   constructor(private usersService: UsersService, private router: Router) { }
 
@@ -19,8 +22,10 @@ export class LogInComponent implements OnInit {
   }
 
   login() {
-    console.log(this.email + " " + this.password)
-    this.usersService.getUserAndLogin(this.email, this.password).subscribe(response => {
+    console.log(this.userDto.email + " " + this.userDto.password)
+    this.usersService.getUserAndLogin(this.userDto).subscribe(response => {
+      this.token = response
+      Globalvar.token = this.token
       this.router.navigate(['students'])
     });
 

@@ -1,6 +1,8 @@
 import {Injectable} from "@angular/core";
 import {HttpClient, HttpHeaders} from "@angular/common/http";
 import {User} from "../model/user";
+import {Userdto} from "../model/userdto";
+import {Token} from "../model/token";
 
 @Injectable({providedIn: 'root'})
 export class UsersService {
@@ -8,11 +10,12 @@ export class UsersService {
 
   constructor(private http: HttpClient) { }
 
-  getUserAndLogin(email: string, password: string) {
-    const headers = new HttpHeaders(email ? {
-      authorization : 'Basic ' + btoa(email + ':' + password)
-    } : {});
-    return this.http.get(`${this.baseURL}/student/list`, {headers})
+  getUserAndLogin(userDto: Userdto) {
+    /*const headers = new HttpHeaders(userDto.email ? {
+      authorization : 'Basic ' + btoa(userDto.email + ':' + userDto.password)
+    } : {});*/
+    console.log(userDto)
+    return this.http.post<Token>(`${this.baseURL}/auth/login`, userDto)
   }
 
   createUser(user: User) {

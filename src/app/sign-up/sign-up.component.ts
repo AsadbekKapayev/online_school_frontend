@@ -19,6 +19,7 @@ export class SignUpComponent implements OnInit {
   signup() {
     console.log(this.user)
     this.usersService.createUser(this.user).subscribe(data => {
+      console.log("signup")
       this.router.navigate(['login'])
     })
   }
